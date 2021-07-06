@@ -15,17 +15,7 @@ npm install -S @jswork/use-force-update
 __GENERATE_DOCS__
 
 ## usage
-1. import css
-  ```scss
-  @import "~@jswork/use-force-update/dist/style.css";
-
-  // or use sass
-  @import "~@jswork/use-force-update/dist/style.scss";
-
-  // customize your styles:
-  $use-force-update-options: ()
-  ```
-2. import js
+1. import js
   ```js
   import ReactDemokit from '@jswork/react-demokit';
   import React, { useState } from 'react';
