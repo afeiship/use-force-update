@@ -1,6 +1,6 @@
 {
   "name": "@jswork/use-force-update",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React hook use-force-update.",
   "main": "dist/index.js",
   "scripts": {
