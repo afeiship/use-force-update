@@ -12,12 +12,7 @@ npm install -S @jswork/use-force-update
 ```
 
 ## properties
-| Name      | Type   | Required | Default | Description                           |
-| --------- | ------ | -------- | ------- | ------------------------------------- |
-| className | string | false    | -       | The extended className for component. |
-| value     | object | false    | null    | The changed value.                    |
-| onChange  | func   | false    | noop    | The change handler.                   |
-
+__GENERATE_DOCS__
 
 ## usage
 1. import css
@@ -33,10 +28,37 @@ npm install -S @jswork/use-force-update
 2. import js
   ```js
   import ReactDemokit from '@jswork/react-demokit';
-  import React from 'react';
+  import React, { useState } from 'react';
   import ReactDOM from 'react-dom';
-  import UseForceUpdate from '@jswork/use-force-update';
+  import useForceUpdate from '../src/main';
   import './assets/style.scss';
+
+  const ForceComponent = () => {
+    const [count, setCount] = useState({ value: 0 });
+    const forceUpdate = useForceUpdate();
+    return (
+      <div className="is-counter">
+        <button
+          className="button is-primary"
+          onClick={(e) => {
+            console.log('update value use forceUdpate');
+            count.value = count.value + 1;
+            forceUpdate();
+          }}>
+          increase
+        </button>
+        <span>{count.value}</span>
+        <button
+          className="button is-danger"
+          onClick={(e) => {
+            console.log('set count use a new object.');
+            setCount({ value: count.value - 1 });
+          }}>
+          decrease
+        </button>
+      </div>
+    );
+  };
 
   class App extends React.Component {
     render() {
@@ -44,15 +66,13 @@ npm install -S @jswork/use-force-update
         <ReactDemokit
           className="p-3 app-container"
           url="https://github.com/afeiship/use-force-update">
-          <UseForceUpdate className="mb-5 has-text-white" />
-          <button className="button is-primary is-fullwidth">Start~</button>
+          <ForceComponent />
         </ReactDemokit>
       );
     }
   }
 
   ReactDOM.render(<App />, document.getElementById('app'));
-
   ```
 
 ## documentation

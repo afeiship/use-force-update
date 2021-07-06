@@ -19,19 +19,7 @@
     "type": "git",
     "url": "git+https://github.com/afeiship/use-force-update.git"
   },
-  "keywords": [
-    "boilerplate",
-    "react",
-    "component",
-    "cra",
-    "template",
-    "webpack",
-    "sass",
-    "scss",
-    "docs",
-    "service-worker",
-    "sw"
-  ],
+  "keywords": [],
   "author": "afei",
   "license": "MIT",
   "browserslist": {
