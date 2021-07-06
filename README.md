@@ -15,7 +15,6 @@ npm install -S @jswork/use-force-update
 __GENERATE_DOCS__
 
 ## usage
-1. import js
   ```js
   import ReactDemokit from '@jswork/react-demokit';
   import React, { useState } from 'react';
