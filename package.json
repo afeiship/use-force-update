@@ -7,7 +7,6 @@
     "dev": "cross-env NODE_ENV=development webpack-dev-server",
     "build": "cross-env NODE_ENV=production webpack -p",
     "postbuild": "node-sass src/components/style.scss dist/style.css",
-    "predocs": "node build/markdown.js",
     "docs": "cross-env NODE_ENV=docs webpack -p",
     "postdocs": "t2k",
     "pages": "github-cli -p",
@@ -19,7 +18,12 @@
     "type": "git",
     "url": "git+https://github.com/afeiship/use-force-update.git"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "hook",
+    "force-update",
+    "trigger"
+  ],
   "author": "afei",
   "license": "MIT",
   "browserslist": {
