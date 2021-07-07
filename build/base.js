@@ -18,12 +18,12 @@ export default {
     rules: [
       loaders.babel(),
       loaders.image(),
-      loaders.sass(),
+      // loaders.sass(),
       loaders.version()
     ]
   },
   plugins: [
     plugins.progressBar(),
-    plugins.minCssExtract()
+    // plugins.minCssExtract()
   ]
 };
